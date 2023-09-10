@@ -1,10 +1,11 @@
-import {Text, View} from 'react-native';
+import {Button, Text, View} from 'react-native';
+import FoodCard from '../components/foodCard';
 
-export default function Dashboard() {
+export default function Dashboard({navigation}) {
   return (
     <>
-      <View>
-        <Text className="text-red-500">ini dashboard</Text>
+      <View className="flex justify-center items-center flex-1">
+        <FoodCard></FoodCard>
       </View>
     </>
   );
