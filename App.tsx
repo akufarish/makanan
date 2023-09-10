@@ -1,9 +1,6 @@
-
-
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Text, View} from 'react-native';
 import Dashboard from './app/page';
 import Login from './app/auth/Login';
 import Profile from './app/profile';
