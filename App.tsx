@@ -7,10 +7,20 @@ import Profile from './app/profile';
 import Booking from './app/booking/booking';
 import Welcome from './app/welcome';
 import Intro from './app/intro';
+import BootSplash from 'react-native-bootsplash';
+import {useEffect} from 'react';
 
 const Stack = createStackNavigator();
 
 export default function App() {
+  useEffect(() => {
+    const init = async () => {};
+
+    init().finally(async () => {
+      await BootSplash.hide({fade: true});
+      console.log('BootSplash has been hidden successfully');
+    });
+  }, []);
   return (
     <>
       <NavigationContainer>
